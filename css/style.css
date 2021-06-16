@@ -12,19 +12,23 @@ body {
 }
  /*Add Cards Style */
 .cardstyle {
-    width: 16rem;
+    width: 40rem;
     height: 22rem;
+    background-color:#eddec79b; 
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .cardstyle {
+        width: 19rem;
+    }
 }
 
-
-.list-border {
-    border: none !important ;
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
 }
 
 /*Buttons of Add Cards style*/
-.fa-trash {
-    color:red;      
-}
 
 .btn-outline-success{
     height: min-content;
@@ -39,10 +43,10 @@ body {
 /*New task button at the top*/
 #newTask {
     border-color: none;
-    font-family: cambria;
+    /* font-family: cambria; */
     border-radius: 20px !important;
     border-color: none ;
-    font-family:cursive;
+    /* font-family:cursive; */
     font-size: initial;
     background-color:  #097380;
     color:rgb(240, 236, 223);
@@ -57,7 +61,7 @@ body {
     border: none; 
 }
 form {
-    background-color: #5fb2bd31;
+    background-color: #b3c9cc31;
     padding: 10px;
     border-radius: 20px;
 }
@@ -73,7 +77,7 @@ form {
   .add-task{
     border-radius: 15px !important;
     border-color: none ;
-    font-family:cursive;
+    /* font-family:cursive; */
     font-size: initial;
     background-color:#ff6113;
     color:rgb(240, 236, 223);
@@ -83,7 +87,7 @@ form {
 
 /*Title Task List*/
 h1 {
-    font-family:cursive;
+    /* font-family:cursive; */
     font-weight: bolder;
     color: #09545d;
     font-size: 2.7em;
@@ -93,7 +97,7 @@ h1 {
 
 /*labels*/
 .bold-label {
-    font-family:cursive;
+    /* font-family:cursive; */
     font-size: 1.2em;
 }
 
@@ -108,20 +112,15 @@ select {
 }
 
 .list-group{
-    
     border-radius: 10px;
     padding: 80px;
     
 }
-.cardstyle {
-    background-color:#eddec79b; 
-    border-radius: 15px;
-    
-}
+
 
 /*Display cards labels */
 .card-title{
-    font-family:cursive;
+    /* font-family:cursive; */
     font-weight:bold; 
     color:#09545d;
 }
